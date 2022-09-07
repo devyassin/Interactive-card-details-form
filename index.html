@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+
+  <body>
+    <div class="big-container">
+      <div class="first-part">
+        <div class="first-card">
+          <div class="logo-container">
+            <img class="logo" src="images/card-logo.svg" />
+          </div>
+          <div class="code-numbers">
+            <div class="numbers">0000</div>
+            <div class="numbers">0000</div>
+            <div class="numbers">0000</div>
+            <div class="numbers">0000</div>
+          </div>
+          <div class="info">
+            <div class="name">JANE APPLESEED</div>
+            <div class="date">00/00</div>
+          </div>
+        </div>
+        <div class="second-card">
+          <div class="num">000</div>
+        </div>
+      </div>
+      <div class="second-part">
+        <form class="from-card">
+          <div class="form-container-box">
+            <div class="form-container">
+              <label>CARDHOLDER NAME</label>
+              <input
+                class="cardholder-name"
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+              />
+            </div>
+            <div class="form-container">
+              <label>CARD NUMBER</label>
+              <input
+                class="card-number"
+                type="text"
+                placeholder="e.g. 1234 5678 9123 0000"
+              />
+            </div>
+            <div class="form-grid">
+              <label class="label-grid">Exp. DATE (MM/YY)</label>
+              <label class="label-grid--2">CVC</label>
+              <input class="label-grid-input" type="number" placeholder="MM" />
+              <input
+                class="label-grid-input--2"
+                type="number"
+                placeholder="YY"
+              />
+              <input class="input-grid" type="number" placeholder="e.g. 123" />
+            </div>
+
+            <button class="btn">Confirm</button>
+          </div>
+          <div class="thank-container hidden">
+            <div class="thank-icon">
+              <img class="icon" src="images/icon-complete.svg" />
+            </div>
+            <div class="thank-title">THANK YOU!</div>
+            <div class="thank-text">We've added your card details</div>
+            <button class="thank-btn">Continue</button>
+          </div>
+        </form>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://www.linkedin.com/in/yassine-lamouadden-192509124/"
+            target="_blank"
+            >Yassine Lamouadden</a
+          >.
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
